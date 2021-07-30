@@ -14,7 +14,7 @@ async def on_ready():
   await send_to.send("Im alive i think")
 
 @client.command()
-async def hif(ctx):
+async def hi(ctx):
   await ctx.send("\'sup")
   
 client.run(os.environ.get("TOKEN"))
