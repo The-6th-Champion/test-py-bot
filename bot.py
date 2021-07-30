@@ -4,7 +4,7 @@ import asyncio
 
 from discord.ext import commands
 
-client = commmands.Bot(command_prefix="!")
+client = commands.Bot(command_prefix="!")
 
 @client.event
 async def on_ready():
@@ -14,7 +14,7 @@ async def on_ready():
   await send_to.send("Im alive i think")
 
 @client.command()
-async def hi(ctx):
+async def hif(ctx):
   await ctx.send("\'sup")
   
 client.run(os.environ.get("TOKEN"))
